@@ -1,0 +1,13 @@
+* {margin:0; padding:0}
+
+body {color:#000000; background:#ffffff; font-size:12pt;}
+
+a {text-decoration:underline; color:#0000ff;}
+
+#Header, #ToolsHeader, #ToolsContent, #subscribe, #search , #footer, #utilitybar, #breadcrumb, #leftnav, #rightnav, #Banner, #RightColumn, #Subscribe, #Subscribelabel, #SubscribeForm, #Search, #SearchForm, #Searchlabel, #Nav, #agencyname, , .crumb-links, .hidePrint {display:none; width:0px; margin:0px; padding:0px; height:0px}
+#content {float:none; display:inline; text-align:left; margin-left:0px; padding:0px; background-color:#FFF; margin-right:10px; margin-top:7px; font-size:12pt;}
+Body {font-family:sanserif; margin:0px; padding:0px; background-color:#FFFFFF; width:100%; text-align:left; font-size:12pt}
+#Main, {width:100%; background-color:#FFFFFF; margin:0px; background-image:none; text-align:left; font-size:12pt;}
+#SEGMENTS { padding:3px; font-size:12px; margin-left:10px; margin-bottom:5px; font-size:12pt; }
+.headermed {text-align:left}
+p, li{ padding:3px; font-size:12px; margin-left:10px; margin-bottom:5px; font-size:12pt; }

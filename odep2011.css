@@ -1,0 +1,198 @@
+/* This style sheet is only for the www.dol.gov/index.htm.  Refer to style.css for all other pages */
+/* This style sheet only needs the following sections: Global, Headers, Text Styles, Page Structure, and Forms */
+
+/* Global */
+/* Headers */
+
+H5 { font-size:12px; color:#fff; font-weight:bold; vertical-align:middle }
+H5 a:{ font-size:12px; color:#fff; text-decoration:none; font-weight:bold; vertical-align:middle }
+H5 a:hover{ font-size:12px; color:#fff; text-decoration:underline;  font-weight:bold; vertical-align:middle }
+H5 a:focus{ font-size:12px; color:#b3b3b3; text-decoration:underline;  font-weight:bold; vertical-align:middle }
+
+/* End Headers */
+
+/* Page Structure */
+
+#AgenciesHeader{ text-align:left; padding:4px; margin-left:9px; margin-top:8px; padding-top:8px; width:300px; margin-bottom:0px; float:left; display:inline; vertical-align:bottom }
+
+#AgenciesContent{ text-align:left; background-color:#FFF; margin-left:9px; padding-left:9px; margin-top:0px; width:300px; height:125px; margin-bottom:0px; float:left; display:inline; overflow:auto }
+
+#Border{ padding:1px; border:2px solid #b3b3b3; background-color:#f3f3f3; width:305px;}
+
+#Browse{ background-color:#FFF; margin-left:9px; margin-top:10px; width:300px; margin-bottom:0px; float:left; display:inline }
+
+#colwrap1{ float:left; width:615px; margin-top:0px; margin-left:-10px }
+
+#colwrap2{ float:right; width:300px; margin-top:0px;  }
+
+#colwrap3{ float:right; width:520px }
+
+#colwrap5{ float:left; width:300px; margin-top:0px; margin-left:0px }
+
+#colwrap6{ float:right; width:520px; margin-top:0px; margin-left:0px }
+
+#Date{ font-size:12px; text-align:right; margin-right:12px; margin-top:13px; height:21px; margin-bottom:0px; float:right; display:inline; overflow:hidden }
+
+#DisabilityGov { background-color:#F3F3F3; height:140px; }
+
+#DisabilityGovText { margin-top:-5px; }
+
+#DropMenu{ text-align:left; background-color:#FFF; width:530px; margin-bottom:0px; float:left; display:inline; vertical-align:bottom }
+#DropMenu li a{ text-decoration:none; margin-left:-5px }
+#DropMenu li a:hover{ text-decoration:underline; color:#000; }
+#DropMenu li a:focus{ text-decoration:underline; color:#000; }
+
+#FeatureContent{ text-align:left; margin-left:9px;padding-left:4px; padding-right:10px; margin-top:0px; width:300px; height:160px; margin-bottom:0px; float:left; display:inline; background-color:#fff; /* overflow:auto */}
+
+#FeatureHeader{ text-align:left; padding:4px; margin-left:9px; margin-top:8px; padding-top:8px; width:300px; margin-bottom:0px; float:left; display:inline; vertical-align:bottom }
+
+#Footer{ margin-left:auto; margin-right:auto; width:984px; }
+
+#FooterContact{ background-color:#B4B4B4; margin-left:0px; margin-top:0px; width:984px; height:36px; margin-bottom:0px; float:left; display:inline; overflow:hidden; font-size:10px; text-align:center; vertical-align:middle }
+
+#FooterContactContainer{ margin-top:5px }
+#FooterContactContainer a{ text-decoration:underline; color:#000 }
+#FooterContactContainer a:hover{ text-decoration:underline; color:#000; font-weight:bold }
+#FooterContactContainer a:focus{ text-decoration:underline; color:#000; font-weight:bold }
+
+#FooterMenu{ background-color:#900; margin-left:0px; margin-top:0px; width:984px; height:29px; margin-bottom:0px; float:left; display:inline; overflow:hidden; font-weight:bold; font-size:10px; color:#FFF; text-align:center; vertical-align:middle }
+
+#FooterMenuContainer{ margin-top:9px }
+#FooterMenuContainer a{ color:#FFF; text-decoration:none }
+#FooterMenuContainer a:hover{ color:#FFF; text-decoration:underline }
+#FooterMenuContainer a:focus{ color:#FFF; text-decoration:underline }
+
+#OdepForm { font-size:14px; text-decoration:none; color:#000; font-weight:bold; float:left; margin-left:12px;  width:760px; margin-bottom: 10; }
+
+#Header{ background-image:url("http://www.dol.gov/images/RedVerticalGrad.jpg"); background-repeat:repeat-x; height:79px; width:984px; text-align:center }
+
+#LeftColumn{ float:left; width:300px; margin-top:0px; margin-left:0px; padding-right:5px; border:0px solid #f0f0f0 }
+
+#Line{ margin-top:2px; margin-left:5px; margin-bottom:7px; width:605px; float:left; display:inline; }
+
+#Main{ width:984px; background-color:#FFF; margin:0 auto; background-image:url(http://www.dol.gov/images/VerticalGrad.jpg); background-repeat:repeat-x }
+
+#Nav{ margin-left:0px; margin-top:0px; width:464px; height:22px; margin-bottom:0px; float:left; display:inline; overflow:hidden }
+
+#NewlogoHeader{ text-align:left; padding:4px; margin-left:7px; margin-top:13px; margin-bottom:0px; float:left; display:inline; vertical-align:bottom }
+
+#NewlogoContent{ text-align:left;background-color:#FFF;width:530px; height:263px; margin-bottom:0px; float:left; display:inline; vertical-align:bottom }
+
+#OdepBanner{ background-image:url("http://www.dol.gov/odep/images/odepbanner.gif"); width:950px; height:95px;  margin-left:4px; margin-top:0px; float:left; display:inline; background-repeat:no-repeat; overflow:hidden; }
+#OdepBanner h1{	position: absolute; left: -9999px; }
+#OdepBanner h2{	font-size:15px; text-decoration:none; color:#666; font-weight:bold; float:left; margin-left:502px; margin-top:25px;} 
+#OdepBanner h3 { font-size:12px; text-decoration:none; color:#fff; font-weight:bold; float:left; margin-left:310px; margin-top:5px;}
+#OdepBanner h3 a{ font-size:12px; text-decoration:none; color:#fff; font-weight:bold; }
+#OdepBanner h3 a:hover{ font-size:12px; text-decoration:underline; color:#b3b3b3; font-weight:bold; }
+#OdepBanner h3 a:focus{ font-size:12px; text-decoration:underline; color:#b3b3b3; font-weight:bold; }
+
+#OdepBannerSecondary{ background-image:url("http://www.dol.gov/odep/images/odep-landing-banner.gif"); width:740px; height:110px; margin-left:10px; margin-top:0px; float:left; background-repeat:no-repeat; overflow:hidden; }
+#OdepBannerSecondary h1{ position: absolute; left: -9999px; }
+#OdepBannerSecondary h2{ font-size:15px; text-decoration:none; color:#666; font-weight:bold; float:left; margin-left:0px; margin-top:70px;} 
+#OdepBannerSecondary h3 { font-size:14px; text-decoration:none; color:#000; font-weight:bold; float:left; margin-left:0px;   }
+#DropMenuSecondary{ float:left; margin-top:5px; width:760px; }
+
+#Practices{ text-decoration:none; color:#000; margin-left:3px; width:300px; margin-bottom:0px; display:inline; vertical-align:bottom; float:left; }
+
+#PracticesText{ margin-left:-8px; margin-top:5px;}
+#PracticesText a { text-decoration:none; color:#000; }
+#PracticesText a:hover { text-decoration:underline; color:#000; }
+#PracticesText a:focus { text-decoration:underline; color:#000; }
+
+#PracticesHeader { width:298px; height:25px; background-color:#CCC; margin-left:2px; }
+#PracticesHeader a { text-decoration:none; color:#000; }
+#PracticesHeader a:hover { text-decoration:underline; color:#000; }
+#PracticesHeader a:focus { text-decoration:underline; color:#000; }
+
+#Profile { font-size:12px; text-decoration:none; color:#fff; font-weight:bold; margin-left:6px; margin-top:8px; text-align:left; }
+#Profile a{ font-size:12px; text-decoration:none; color:#fff; font-weight:bold; margin-left:6px; margin-top:8px; text-align:left; }
+#Profile a:hover{ font-size:12px; text-decoration:underline; color:#fff; font-weight:bold; margin-left:6px; margin-top:8px; text-align:left; }
+#Profile a:focus{ font-size:12px; text-decoration:underline; color:#fff; font-weight:bold; margin-left:6px; margin-top:8px; text-align:left; }
+
+#Profile2 { font-size:12px; text-decoration:none; color:#fff;  margin-left:6px; margin-top:8px; font-weight:normal; text-align:left; }
+#Profile2 a { font-size:12px; text-decoration:none; color:#fff;  margin-left:6px; margin-top:8px; font-weight:normal; text-align:left; }
+#Profile2 a:hover { font-size:12px; text-decoration:none; text-decoration:underline; color:#fff;  margin-left:6px; margin-top:8px; font-weight:normal; text-align:left; }
+#Profile2 a:focus { font-size:12px; text-decoration:none; text-decoration:underline; color:#fff;  margin-left:6px; margin-top:8px; font-weight:normal; text-align:left; }
+
+#Randomizer{ width:300px; height:435px; background: #20507d url("http://www.dol.gov/odep/images/profilegradient.jpg") repeat-x bottom; }
+
+#RandomizerHeader{ text-align:left; padding:4px; margin-left:9px; margin-top:8px; padding-top:8px; width:302px; margin-bottom:0px; float:left; display:inline; vertical-align:bottom }
+
+#RandomizerContent{ text-align:left; margin-left:9px; margin-top:0px; width:300px; height:400px; margin-bottom:0px; float:left; display:inline }
+
+#RightColumn{ float:right; font-size:10px; width:520px; margin-top:10px; margin-left:2px }
+#RightColumn a{ text-decoration:none; color:#fff }
+
+#SecondaryInclude { width:900px; }
+
+#SponsorHeader { width:310px; background-color:#CCC; height:25px; }
+#SponsorHeader a { text-decoration:none; color:#000; }
+#SponsorHeader a:hover { text-decoration:underline; color:#000; }
+#SponsorHeader a:focus { text-decoration:underline; color:#000; }
+
+#SponsorText{ margin-left:-8px; }
+
+#SponsoredContent { text-align:left; margin-left:9px;padding-left:4px; padding-right:10px; margin-top:0px; width:300px; height:200px; margin-bottom:0px; float:left; display:inline; background-color:#fff; /* overflow:auto */}
+
+#Stats{ text-decoration:none; color:#000; margin-left:10px; width:300px; margin-bottom:0px; display:inline; vertical-align:bottom; float:left; }
+
+#StatsText{ margin-left:-8px; margin-top:5px;}
+
+#StatsHeader { width:296px; height:25px; background-color:#CCC; margin-left:0px;  }
+#StatsHeader a { text-decoration:none; color:#000; }
+#StatsHeader a:hover { text-decoration:underline; color:#000; }
+#StatsHeader a:focus { text-decoration:underline; color:#000; }
+
+#Topic{ text-align:left; margin-left:0px; margin-top:10px; margin-bottom:0px; float:left; display:inline; vertical-align:bottom }
+
+#TopicSecondary{ margin-top:5px; margin-bottom:0px; vertical-align:bottom; float:right; }
+
+#TopicTable{ margin-left:0px; margin-top:12px; margin-bottom:5px; float:left; display:inline; vertical-align:bottom }
+
+#TopicContent { text-align:left; background-color:#FFF; width:615px; margin-bottom:0px; float:left; display:inline; vertical-align:bottom }
+#TopicContent li a{ text-decoration:none; margin-left:-5px }
+#TopicContent li a:hover{ text-decoration:underline }
+#TopicContent li a:focus{ text-decoration:underline }
+
+#WhatsNewHeader { color:#fff; }
+#WhatsNewHeader a { text-decoration:none; color:#fff; }
+#WhatsNewHeader a:hover { text-decoration:underline; color:#fff; }
+#WhatsNewHeader a:focus { text-decoration:underline; color:#fff; }
+
+#WhatsNew{ text-align:left; float:left; display:inline; vertical-align:bottom; margin-left:-5px; margin-top:10px; min-height:170px; }
+#WhatsNew a { color:#003399; text-decoration:none }
+#WhatsNew a:hover { color:#000; text-decoration:underline }
+#WhatsNew a:focus { color:#000; text-decoration:underline }
+
+#WhatsNew li { color:#000; text-decoration:none}
+#WhatsNew li a{ color:#003399; text-decoration:none }
+#WhatsNew li a:hover{ color:#000; text-decoration:underline }
+#WhatsNew li a:focus{ color:#000; text-decoration:underline }
+
+#WhatsNewFeatured{ text-align:left; background-color:#FFF; width:615px; margin-bottom:0px; float:left; display:inline; vertical-align:bottom }
+
+.arrow{ font-size:10px; font-weight:bold; color:#fff; }
+.box-title{ color:#f3f3f3; font-size:80%; font-weight:bold }
+.box-title a:{ color:#f3f3f3; font-size:80%; font-weight:bold }
+.boxtitle2{ background-image:url("http://www.dol.gov/odep/images/VerticalGrad.jpg") }
+.moreinfo{ color:#003399; padding:3px; font-size:12px; }
+.moreinfo a{ color:#003399; text-decoration:none }
+.moreinfo a:hover{ color:#003399; text-decoration:underline }
+.moreinfo a:focus{ color:#003399; text-decoration:underline }
+.moreinfo a:visited{ color:#003399; text-decoration:underline }
+.odepSearchButton{ position: absolute; top: 269px;}
+.red{ color:#990000; font-weight:bold; font-size:12px; }
+
+/* End Page Structure */
+
+/* Forms */
+#Search{ font-size:8pt; text-align:left; margin-left:0px; float:left; display:inline; color:#FFF }
+
+#Searchlabel a{ font-size:8pt; color:#f6f6f6 }
+
+#Subscribe{ font-size:8pt; text-align:left; margin-left:0px; width:230px; height:35px; float:left; margin-bottom:0px; display:inline; color:#FFF }
+
+#SubscribeForm{ padding-top:2px }
+
+#Subscribelabel a{ font-size:8pt; color:#f6f6f6 }
+/* End Forms */
