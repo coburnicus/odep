@@ -19,72 +19,16 @@
 
 <!--Jeff's jquery stuff -->
 <link type="text/css" href="css/smoothness/jquery-ui-1.8.16.custom.css" rel="stylesheet" />	
+    <link type="text/css" href="css/fg.menu.css" media="screen" rel="stylesheet" />
 <link type="text/css" href="css/custom.css" rel="stylesheet" />	
 
 
 		<script type="text/javascript" src="js/jquery-1.6.2.min.js"></script>
 		<script type="text/javascript" src="js/jquery-ui-1.8.16.custom.min.js"></script>
-		<script type="text/javascript" src="js/bootstrap-dropdown.js"></script>
-		<script type="text/javascript">
-			$(function(){
+		<script type="text/javascript" src="js/fg.menu.js"></script>
+    
 
-				// Accordion
-
-				$("#accordion").accordion({ header: "h3" });
-				$("#accordion").accordion({ autoHeight: false,});
-				$("#accordion").accordion({ header: "h3", collapsible: true, active: false });
-	
-				// Tabs
-				$('#tabs').tabs();
-	
-
-				// Dialog			
-				$('#dialog').dialog({
-					autoOpen: false,
-					width: 600,
-					buttons: {
-						"Ok": function() { 
-							$(this).dialog("close"); 
-						}, 
-						"Cancel": function() { 
-							$(this).dialog("close"); 
-						} 
-					}
-				});
-				
-				// Dialog Link
-				$('#dialog_link').click(function(){
-					$('#dialog').dialog('open');
-					return false;
-				});
-
-				// Datepicker
-				$('#datepicker').datepicker({
-					inline: true
-				});
-				
-				// Slider
-				$('#slider').slider({
-					range: true,
-					values: [17, 67]
-				});
-				
-				// Progressbar
-				$("#progressbar").progressbar({
-					value: 20 
-				});
-				
-				//hover states on the static widgets
-				$('#dialog_link, ul#icons li').hover(
-					function() { $(this).addClass('ui-state-hover'); }, 
-					function() { $(this).removeClass('ui-state-hover'); }
-				);
-				
-			});
-			
-    $('.dropdown-toggle').dropdown()
-		</script>
-
+		
 
 <style type="text/css">
 			/*demo page css*/
@@ -252,23 +196,18 @@
 </div>
 </div>-->
 
-    <ul class="nav pills">
-    <li class="active"><a href="#">Regular link</a></li>
-    <li class="dropdown" id="menu1">
-    <a class="dropdown-toggle" data-toggle="dropdown" href="#menu1">
-    Dropdown
-    <b class="caret"></b>
-    </a>
-    <ul class="dropdown-menu">
-    <li><a href="#">Action</a></li>
-    <li><a href="#">Another action</a></li>
-    <li><a href="#">Something else here</a></li>
-    <li class="divider"></li>
-    <li><a href="#">Separated link</a></li>
-    </ul>
-    </li>
-    ...
-    </ul>
+    <p id="menuLog">You chose: <span id="menuSelection"></span></p>
+
+<a tabindex="0" href="#search-engines" class="fg-button fg-button-icon-right ui-widget ui-state-default ui-corner-all" id="flat"><span class="ui-icon ui-icon-triangle-1-s"></span>flat menu</a>
+<div id="search-engines" class="hidden">
+<ul>
+	<li><a href="#">Google</a></li>
+	<li><a href="#">Yahoo</a></li>
+	<li><a href="#">MSN</a></li>
+	<li><a href="#">Ask</a></li>
+	<li><a href="#">AOL</a></li>
+</ul>
+</div>
 	
 <h1>Universal Strategies for Outcome-Driven Services</h1>
 
