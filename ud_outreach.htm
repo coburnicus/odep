@@ -18,28 +18,72 @@
 <script src="AC_RunActiveContent.js" language="javascript"></script>
 
 <!--Jeff's jquery stuff -->
-<link type="text/css" href="css/smoothness/jquery-ui-1.8.16.custom.css" rel="stylesheet" />	
-    <link type="text/css" href="css/fg.menu.css" media="screen" rel="stylesheet" />
 <link type="text/css" href="css/custom.css" rel="stylesheet" />	
-
-
-		<script type="text/javascript" src="js/jquery-1.6.2.min.js"></script>
-		<script type="text/javascript" src="js/jquery-ui-1.8.16.custom.min.js"></script>
-		<script type="text/javascript" src="js/fg.menu.js"></script>
+  <script type="text/javascript" src="jquery-1.3.2.min.js"></script>
+    <script type="text/javascript" src="fg.menu.js"></script>
     
-
+    <link type="text/css" href="fg.menu.css" media="screen" rel="stylesheet" />
+    <link type="text/css" href="theme/ui.all.css" media="screen" rel="stylesheet" />
+    
+    <!-- styles for this example page only -->
+	<style type="text/css">
+	body { font-size:62.5%; margin:0; padding:0; }
+	#menuLog { font-size:1.4em; margin:20px; }
+	.hidden { position:absolute; top:0; left:-9999px; width:1px; height:1px; overflow:hidden; }
+	
+	.fg-button { clear:left; margin:0 4px 40px 20px; padding: .4em 1em; text-decoration:none !important; cursor:pointer; position: relative; text-align: center; zoom: 1; }
+	.fg-button .ui-icon { position: absolute; top: 50%; margin-top: -8px; left: 50%; margin-left: -8px; }
+	button.fg-button { width:auto; overflow:visible; } /* removes extra button width in IE */
+	
+	.fg-button-icon-left { padding-left: 2.1em; }
+	.fg-button-icon-right { padding-right: 2.1em; }
+	.fg-button-icon-left .ui-icon { right: auto; left: .2em; margin-left: 0; }
+	.fg-button-icon-right .ui-icon { left: auto; right: .2em; margin-left: 0; }
+	.fg-button-icon-solo { display:block; width:8px; text-indent: -9999px; }	 /* solo icon buttons must have block properties for the text-indent to work */	
+	
+	.fg-button.ui-state-loading .ui-icon { background: url(spinner_bar.gif) no-repeat 0 0; }
+	</style>
+	
+	<!-- style exceptions for IE 6 -->
+	<!--[if IE 6]>
+	<style type="text/css">
+		.fg-menu-ipod .fg-menu li { width: 95%; }
+		.fg-menu-ipod .ui-widget-content { border:0; }
+	</style>
+	<![endif]-->	
+    
+    <script type="text/javascript">    
+    $(function(){
+    	// BUTTONS
+    	$('.fg-button').hover(
+    		function(){ $(this).removeClass('ui-state-default').addClass('ui-state-focus'); },
+    		function(){ $(this).removeClass('ui-state-focus').addClass('ui-state-default'); }
+    	);
+    	
+    	// MENUS    	
+		$('#flat').menu({ 
+			content: $('#flat').next().html(), // grab content from this page
+			showSpeed: 400 
+		});
 		
+		$('#hierarchy').menu({
+			content: $('#hierarchy').next().html(),
+			crumbDefaultText: ' '
+		});
+		
+		$('#hierarchybreadcrumb').menu({
+			content: $('#hierarchybreadcrumb').next().html(),
+			backLink: false
+		});
+		
+		// or from an external source
+		$.get('menuContent.html', function(data){ // grab content from another page
+			$('#flyout').menu({ content: data, flyOut: true });
+		});
+    });
+    </script>
 
-<style type="text/css">
-			/*demo page css*/
-			body{ font: 62.5% "Trebuchet MS", sans-serif; margin: 50px;}
-			.demoHeaders { margin-top: 2em; }
-			#dialog_link {padding: .4em 1em .4em 20px;text-decoration: none;position: relative;}
-			#dialog_link span.ui-icon {margin: 0 5px 0 0;position: absolute;left: .2em;top: 50%;margin-top: -8px;}
-			ul#icons {margin: 0; padding: 0;}
-			ul#icons li {margin: 2px; position: relative; padding: 4px 0; cursor: pointer; float: left;  list-style: none;}
-			ul#icons span.ui-icon {float: left; margin: 0 4px;}
-		</style>	
+
 				<!--End jeff's jquery stuff -->
 
 
@@ -195,23 +239,24 @@
 </form>
 </div>
 </div>-->
-
-    <p id="menuLog">You chose: <span id="menuSelection"></span></p>
-
-<a tabindex="0" href="#search-engines" class="fg-button fg-button-icon-right ui-widget ui-state-default ui-corner-all" id="flat"><span class="ui-icon ui-icon-triangle-1-s"></span>flat menu</a>
-<div id="search-engines" class="hidden">
+<a tabindex="0" href="#switch_sec" class="fg-button fg-button-icon-right ui-widget ui-state-default ui-corner-all" style="background:#F86451; color:black;" id="flat"><span class="ui-icon ui-icon-triangle-1-s"></span>Choose another section</a>
+<div id="switch_sec" class="hidden">
 <ul>
-	<li><a href="#">Google</a></li>
-	<li><a href="#">Yahoo</a></li>
-	<li><a href="#">MSN</a></li>
-	<li><a href="#">Ask</a></li>
-	<li><a href="#">AOL</a></li>
+	<li><a href="#">Outreach and Marketing</a></li>
+	<li><a href="#">Customer Flow</a></li>
+	<li><a href="#">Assessment</a></li>
+	<li><a href="#">Service Delivery: Resource Area</a></li>
+	<li><a href="#">Service Delivery: Orientation/Workshops</a></li>
+	<li><a href="#">Service Delivery: Intensive/Case Management</a></li>
+	<li><a href="#">Business Service</a></li>
+	<li><a href="#">Resources</a></li>
 </ul>
 </div>
-	
+<br /><br />
 <h1>Universal Strategies for Outcome-Driven Services</h1>
 
 <h2>Toolkit Part 1:   Outreach and Marketing for Your One-Stop</h2>
+
 
 <h3>Introduction</h3>
 
