@@ -36,12 +36,12 @@ border-image: initial;
   list-style: none;
 }
 .nav > li > a {
-	color:#0088CC;
+  color:darkblue;
 
   display: block;
 }
 .nav > li > a:visited {
-  color:#0088CC;
+  color:darkblue;
 }
 .nav > li > a:hover {
   text-decoration: none;
@@ -53,6 +53,7 @@ border-image: initial;
   margin-bottom: 0;
 }
 .nav-list > li > a, .nav-list .nav-header {
+  color:darkblue;
   display: block;
   padding: 3px 15px;
   margin-left: -15px;
@@ -77,3 +78,5 @@ border-image: initial;
 .nav-list [class^="icon-"] {
   margin-right: 2px;
 }
+
+hr {margin:2em;}
